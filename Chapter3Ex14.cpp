@@ -33,6 +33,14 @@ int main()
 	stateTaxAmount = totalAmount * STATE_SALES_TAX;
 	productSales = totalAmount / 1.06;
 	//display results
+	cout << "Month:" << month << endl;
+	cout << "________________" << endl;
+	cout << setw(20) << left << "Total Collected:" << setprecision(2) << fixed << setw(20) << "$" << right << totalAmount << endl;
+	cout << setw(20) << left << "County Sales Tax:" << setprecision(2) << fixed << setw(20) << "$" << right << countyTaxAmount << endl;
+	cout << setw(20) << left << "State Sales Tax:" << setprecision(2) << fixed << setw(20) << "$" << right << stateTaxAmount << endl;
+	cout << setw(20) << left << "Total Sales:" << setprecision(2) << fixed << setw(20) << "$" << right << countyTaxAmount + stateTaxAmount << endl;
+
+
 	
 	
 
