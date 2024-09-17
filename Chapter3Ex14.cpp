@@ -21,24 +21,20 @@ int main()
 	double countyTaxAmount;
 
 	// Get Info
-	cout << "What month is this for?";
-	cin >> month;
-	cout << "What year is this for?";
-	cin >> year;	 
+	//cout << "What month is this for?";
+	//cin >> month;
+	//cout << "What year is this for?";
+	//cin >> year;	 
 	cout << "What was the total amount collected for this period?";
 	cin >> totalAmount;
 
 	//Calculate
 	countyTaxAmount = totalAmount * COUNTY_SALES_TAX;
-	stateTaxAmount = totalAmount * COUNTY_SALES_TAX;
+	stateTaxAmount = totalAmount * STATE_SALES_TAX;
 	productSales = totalAmount / 1.06;
 	//display results
-	cout << "Month:" << month<<endl;
-	cout << "________________" << endl;
-	cout << "Total Collected:$" << totalAmount << endl;
-	cout << "Sales:$" << totalAmount + countyTaxAmount + stateTaxAmount;
-	cout << "County Tax$:" << countyTaxAmount;
-
+	
+	
 
 
 
